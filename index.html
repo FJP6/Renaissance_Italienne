@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comprendre la Renaissance italienne</title>
+<style>
+:root {
+  --ink:#173b66; --sky:#eaf4fa; --cream:#fbf7ed; --peach:#fff0e9;
+  --text:#20242a; --muted:#66717d; --line:#d9e1e7; --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--text);background:#f7f5f0;line-height:1.55}
+header{background:linear-gradient(135deg,#f9f3e6,#eaf4fa);border-bottom:1px solid var(--line)}
+.wrap{max-width:1120px;margin:auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:18px}
+.brand{font-weight:700;color:var(--ink);letter-spacing:.03em}
+nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-size:.95rem}
+.hero{padding:70px 0 62px;display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.kicker{text-transform:uppercase;letter-spacing:.14em;color:#5e7891;font-size:.78rem;font-weight:700}
+h1,h2,h3{color:var(--ink);line-height:1.1}
+h1{font-size:clamp(2.7rem,6vw,5.6rem);margin:.15em 0}
+h2{font-size:clamp(2rem,4vw,3.3rem);margin:.2em 0 .6em}
+h3{font-size:1.35rem;margin:.15em 0 .4em}
+.lead{font-size:1.2rem;max-width:720px}
+.quote{background:#dfeef7;padding:28px;border-radius:20px;color:var(--ink);font-size:1.35rem;font-style:italic}
+section{padding:66px 0}
+.intro{background:var(--white)}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 8px 28px rgba(35,55,70,.06)}
+.card img{width:100%;height:310px;object-fit:contain;background:#f8f5ef;display:block;padding:10px}
+.card-body{padding:24px}
+.meta{color:var(--muted);font-size:.9rem}
+.tag{display:inline-block;background:var(--sky);color:var(--ink);padding:5px 10px;border-radius:999px;font-size:.78rem;font-weight:700}
+.works{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.look{margin-top:18px;padding:18px;background:var(--sky);border-radius:14px}
+.understand{margin-top:12px;padding:18px;background:var(--peach);border-radius:14px}
+.look b,.understand b{color:var(--ink)}
+.gozzoli{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:center;background:#fff8e7;border-radius:24px;padding:26px}
+.gozzoli img{width:100%;max-height:360px;object-fit:contain;border-radius:14px;background:#fff}
+.retain{background:var(--ink);color:#fff}
+.retain h2{color:#fff}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.pill{border:1px solid rgba(255,255,255,.35);padding:8px 13px;border-radius:999px}
+.timeline{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.timeline span{background:#fff;border:1px solid var(--line);padding:10px 14px;border-radius:12px;color:var(--ink)}
+footer{padding:30px 0;color:var(--muted);font-size:.9rem;text-align:center}
+
+.artist-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.artist-link{display:block;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;color:var(--text);min-height:150px}
+.artist-link strong{display:block;color:var(--ink);font-size:1.25rem;margin-bottom:8px}
+.artist-link.current{background:var(--sky);border-color:#b8d3e4}
+.num{font-size:.78rem;letter-spacing:.12em;color:#6f879b;text-transform:uppercase}
+.city-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:24px}
+.place{background:#fff;border-left:5px solid #b8d3e4;padding:20px;border-radius:12px}
+.place b{color:var(--ink)}
+
+@media(max-width:800px){
+ .hero,.intro-grid,.works,.gozzoli,.artist-grid,.city-grid{grid-template-columns:1fr}
+ .hero{padding:48px 0}
+ .card img{height:auto;max-height:360px}
+ nav .links{display:none}
+ section{padding:46px 0}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<nav><div class="brand">COMPRENDRE LA RENAISSANCE</div><div class="links"><a href="#parcours">Parcours</a><a href="#fra">Fra Angelico</a><a href="#oeuvres">Œuvres</a><a href="#florence">À Florence</a></div></nav>
+<div class="hero">
+<div>
+<div class="kicker">Histoire de l'art • Italie</div>
+<h1>Comprendre la Renaissance italienne</h1>
+<p class="lead">Des fiches visuelles pour reconnaître les artistes, regarder les œuvres et comprendre ce qui change entre le Moyen Âge et la Renaissance.</p>
+<div class="timeline"><span>Brunelleschi</span><span>Donatello</span><span>Masaccio</span><span><b>Fra Angelico</b></span><span>Alberti</span><span>Mantegna</span></div>
+</div>
+<div class="quote">« Voir moins d'œuvres, mais apprendre à vraiment les regarder. »</div>
+</div>
+</div>
+</header>
+
+<main>
+
+<section id="parcours">
+<div class="wrap">
+<div class="kicker">Le parcours</div>
+<h2>Les artistes à comprendre</h2>
+<p class="lead">Le site suivra une progression simple : architecture, sculpture et peinture se répondent pour montrer comment Florence invente un nouveau langage artistique.</p>
+<div class="artist-grid">
+<div class="artist-link"><span class="num">01 • Architecture</span><strong>Brunelleschi</strong>Perspective, modules, vocabulaire antique et coupole du Duomo.</div>
+<div class="artist-link"><span class="num">02 • Sculpture</span><strong>Donatello</strong>Corps, mouvement, émotion et redécouverte de l’Antiquité.</div>
+<div class="artist-link"><span class="num">03 • Peinture</span><strong>Masaccio</strong>Poids des corps, lumière et espace perspectif.</div>
+<a class="artist-link current" href="#fra"><span class="num">04 • Peinture</span><strong>Fra Angelico</strong>Entre Moyen Âge et Renaissance : lumière, perspective et spiritualité.</a>
+<div class="artist-link"><span class="num">05 • Architecture</span><strong>Alberti</strong>La façade devient une composition rationnelle inspirée de l’Antiquité.</div>
+<div class="artist-link"><span class="num">06 • Peinture</span><strong>Mantegna</strong>Perspective audacieuse, Antiquité et illusion de l’espace.</div>
+</div>
+<p class="meta">Les prochaines fiches seront ajoutées progressivement sans utiliser d’images d’œuvres inventées.</p>
+</div>
+</section>
+
+<section class="intro" id="fra">
+<div class="wrap intro-grid">
+<div>
+<div class="kicker">v. 1395–1455 • Florence</div>
+<h2>Fra Angelico</h2>
+<p>Peintre et frère dominicain florentin, Fra Angelico appartient à la première Renaissance. Il connaît la perspective, la profondeur, les volumes et la nouvelle architecture inspirée de l'Antiquité, tout en conservant la délicatesse, la lumière et la spiritualité de la peinture médiévale.</p>
+<p>Son art cherche moins l'effet spectaculaire que le <b>silence, la lumière et la méditation</b>.</p>
+</div>
+<div class="quote">Fra Angelico fait entrer la Renaissance dans le monde spirituel.</div>
+</div>
+</section>
+
+<section id="oeuvres">
+<div class="wrap">
+<div class="kicker">4 œuvres pour le comprendre</div>
+<h2>Regarder avant d'expliquer</h2>
+<div class="works">
+
+<article class="card">
+<img src="assets/images/fra-angelico-jugement-dernier.png" alt="Le Jugement dernier de Fra Angelico">
+<div class="card-body"><span class="tag">v. 1431</span><h3>1 — Le Jugement dernier</h3>
+<div class="look"><b>À regarder</b><br>Le Christ au centre, les tombeaux ouverts, les élus qui avancent vers le Paradis et les damnés entraînés vers l'Enfer. Repérer la ronde des bienheureux et des anges.</div>
+<div class="understand"><b>À comprendre</b><br>La structure reste largement médiévale — hiérarchie, symétrie, Paradis et Enfer — mais l'espace gagne en profondeur et les corps en volume.</div></div>
+</article>
+
+<article class="card">
+<img src="assets/images/fra-angelico-annonciation.png" alt="L'Annonciation de San Marco de Fra Angelico">
+<div class="card-body"><span class="tag">v. 1440–1445 • Florence</span><h3>2 — L'Annonciation de San Marco</h3>
+<div class="look"><b>À regarder</b><br>Les colonnes, les arcs en plein cintre, la perspective de la loggia, Gabriel et Marie inclinés l'un vers l'autre, et surtout le grand espace vide entre eux.</div>
+<div class="understand"><b>À comprendre</b><br>Une architecture qui rappelle Brunelleschi. Fra Angelico emploie les inventions de la Renaissance pour créer silence et méditation.</div></div>
+</article>
+
+<article class="card">
+<img src="assets/images/fra-angelico-deposition.png" alt="La Déposition de croix de Fra Angelico">
+<div class="card-body"><span class="tag">v. 1432–1434</span><h3>3 — La Déposition de croix</h3>
+<div class="look"><b>À regarder</b><br>Le poids du corps du Christ, les gestes et les regards, les personnages dans un espace commun, le paysage et les couleurs lumineuses.</div>
+<div class="understand"><b>À comprendre</b><br>Les figures sacrées deviennent aussi des êtres humains qui éprouvent une émotion : Fra Angelico se rapproche du réalisme de la Renaissance.</div></div>
+</article>
+
+<article class="card">
+<img src="assets/images/fra-angelico-couronnement.png" alt="Le Couronnement de la Vierge de Fra Angelico">
+<div class="card-body"><span class="tag">v. 1430–1432 • Louvre</span><h3>4 — Le Couronnement de la Vierge</h3>
+<div class="look"><b>À regarder</b><br>Le Christ couronnant Marie, l'assemblée des saints et des anges, les couleurs éclatantes, les marches et l'atmosphère précieuse.</div>
+<div class="understand"><b>À comprendre</b><br>Le raffinement et la lumière rappellent encore le gothique tandis que l'espace devient progressivement plus construit.</div></div>
+</article>
+
+</div>
+</div>
+</section>
+
+<section id="gozzoli">
+<div class="wrap">
+<div class="gozzoli">
+<img src="assets/images/benozzo-gozzoli-procession-mages.png" alt="La Procession des Mages de Benozzo Gozzoli">
+<div>
+<div class="kicker">Élève et collaborateur</div>
+<h2>Benozzo Gozzoli</h2>
+<p><b>v. 1420–1497</b>. Il travaille aux côtés de Fra Angelico et hérite de son goût pour les couleurs lumineuses, l'élégance et les détails précieux. Son univers devient toutefois beaucoup plus animé : foules, chevaux, paysages, costumes luxueux et portraits.</p>
+<p><b>Fra Angelico → silence et spiritualité</b><br><b>Gozzoli → récit, luxe et profusion de détails</b></p>
+<p class="meta"><i>La Procession des Mages</i>, Chapelle des Mages, Palazzo Medici Riccardi, Florence.</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<section id="florence" class="intro">
+<div class="wrap">
+<div class="kicker">Voir les œuvres en vrai</div>
+<h2>Fra Angelico à Florence</h2>
+<p class="lead">Une fiche peut aussi devenir un guide de visite : elle relie l’artiste aux lieux où son œuvre prend tout son sens.</p>
+<div class="city-grid">
+<div class="place"><b>Museo di San Marco</b><br>L’endroit essentiel pour comprendre Fra Angelico : les fresques ont été pensées pour le couvent et la méditation des dominicains.</div>
+<div class="place"><b>Palazzo Medici Riccardi</b><br>Pour prolonger avec Benozzo Gozzoli et la <i>Procession des Mages</i>, beaucoup plus brillante, animée et mondaine.</div>
+</div>
+</div>
+</section>
+
+<section class="retain" id="retenir">
+<div class="wrap">
+<div class="kicker" style="color:#bdd7e8">La formule à mémoriser</div>
+<h2>Fra Angelico = Moyen Âge + Renaissance</h2>
+<p class="lead">Il adopte la perspective et l'espace de la Renaissance sans abandonner la lumière, la couleur et la spiritualité héritées du monde médiéval.</p>
+<div class="pills"><span class="pill">Lumière</span><span class="pill">Perspective</span><span class="pill">Spiritualité</span><span class="pill">Couleur</span><span class="pill">Silence</span></div>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">Prototype — Comprendre la Renaissance italienne</div></footer>
+</body></html>
