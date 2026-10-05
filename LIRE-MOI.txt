@@ -1,0 +1,15 @@
+MISE À JOUR CIMABUE — REGARDER L'ART
+
+À déposer à la racine du dépôt GitHub :
+- cimabue.html
+- assets/cimabue.css
+- assets/images/icone-avant-cimabue.png
+- assets/images/cimabue-maesta.jpg
+- assets/images/cimabue-crucifix.png
+- assets/images/cimabue-flagellation.png
+
+Cette mise à jour ne contient PAS fra-angelico.html, index.html ou contact.html :
+elle ne peut donc pas les écraser.
+
+Les quatre œuvres sont les fichiers originaux fournis par l'utilisateur.
+Les pastilles sont des recadrages CSS de ces mêmes fichiers.
