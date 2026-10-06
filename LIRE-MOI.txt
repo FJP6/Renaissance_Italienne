@@ -10,4 +10,4 @@ assets/images/cimabue-crucifix.png
 assets/images/cimabue-flagellation.png
 
 Les 4 fichiers dans assets/images sont les images sources originales utilisées par la page.
-Ce pack ne contient pas fra-angelico.html ni contact.html. 
+Ce pack ne contient pas fra-angelico.html ni contact.html.
