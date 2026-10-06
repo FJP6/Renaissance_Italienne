@@ -4,10 +4,71 @@
 <title>Cimabue — Regarder l’Art</title>
 <meta name="description" content="Comprendre Cimabue : comment l’image sacrée médiévale commence à gagner en volume, en humanité et en profondeur.">
 <link rel="stylesheet" href="assets/style.css">
-<link rel="stylesheet" href="assets/cimabue.css">
+<style>
+
+:root{
+ --ink:#18334b; --navy:#123d61; --red:#a7282e; --cream:#f7f3ea;
+ --paper:#fffdf8; --blue:#e9f1f7; --peach:#f7e8df; --line:#d9d2c5;
+ --muted:#65727c; --gold:#b58b42;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1180px,calc(100% - 36px));margin:auto}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-family:Georgia,serif;font-weight:700;letter-spacing:.06em;text-decoration:none;color:var(--navy)}
+.links{display:flex;gap:20px;flex-wrap:wrap}.links a{text-decoration:none;font-size:.94rem}
+.hero{padding:62px 0 38px;background:linear-gradient(180deg,#fff 0,#f8f4eb 100%)}
+.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;font-weight:700;color:var(--red)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.08;margin:.25em 0;color:var(--navy)}
+h1{font-size:clamp(2.6rem,7vw,5.7rem)} h2{font-size:clamp(1.8rem,4vw,3rem)} h3{font-size:1.35rem}
+.lead{font-family:Georgia,serif;font-size:clamp(1.12rem,2.3vw,1.45rem);max-width:850px}
+.thesis{margin-top:24px;padding:18px 22px;border-left:5px solid var(--red);background:#fff;font-family:Georgia,serif;font-size:1.2rem;max-width:850px}
+section{padding:56px 0}
+.section-title{margin-bottom:26px}
+.compare{display:grid;grid-template-columns:1fr 1.18fr;gap:24px;align-items:stretch}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 28px rgba(30,44,56,.06)}
+.panel-head{padding:20px 24px;color:#fff}.before .panel-head{background:var(--navy)}.cimabue .panel-head{background:var(--red)}
+.panel-head h2,.panel-head p{color:#fff;margin:0}.panel-head p{opacity:.92}
+.panel-body{padding:24px}
+.art-main{background:#eee8dc;border-radius:12px;padding:12px;display:flex;justify-content:center;align-items:center;min-height:460px}
+.art-main img{max-height:560px;width:auto;object-fit:contain}
+.caption{font-size:.84rem;color:var(--muted);margin:10px 0 0}
+.details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
+.detail{display:grid;grid-template-columns:92px 1fr;gap:14px;align-items:center}
+.crop{width:92px;height:92px;border-radius:50%;border:3px solid #fff;outline:1px solid var(--gold);background-repeat:no-repeat;background-color:#ddd;box-shadow:0 3px 12px rgba(0,0,0,.12)}
+.detail strong{display:block;color:var(--navy);font-family:Georgia,serif;font-size:1.02rem;margin-bottom:3px}
+.note{background:var(--blue);border-radius:12px;padding:18px 20px;margin-top:24px}
+.note strong{font-family:Georgia,serif;color:var(--navy)}
+.works{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.work{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.work-image{background:#eee8dc;min-height:380px;display:flex;align-items:center;justify-content:center;padding:18px}
+.work-image img{max-height:520px;width:auto;object-fit:contain}
+.work-body{padding:22px}.number{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff;font-weight:700;margin-right:8px}
+.observe{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.observe div{background:#f6f3ed;padding:13px;border-radius:10px;font-size:.91rem}
+.observe b{display:block;color:var(--navy);margin-bottom:4px}
+.turn{display:grid;grid-template-columns:1fr 90px 1fr;align-items:stretch;gap:18px}
+.turn-card{border-radius:18px;padding:26px}.turn-card.before-card{background:var(--blue)}.turn-card.after-card{background:var(--peach)}
+.turn-card h3{font-size:1.65rem}.turn-card ul{margin:12px 0 0;padding-left:20px}
+.thumb{height:180px;display:flex;align-items:center;justify-content:center;margin:15px 0}.thumb img{max-height:180px;width:auto}
+.arrow{display:grid;place-items:center;font-size:4rem;color:var(--navy)}
+.retain{background:var(--navy);color:#fff;border-radius:18px;padding:30px;margin-top:26px}
+.retain h2{color:#fff}.retain p{font-family:Georgia,serif;font-size:1.3rem;margin:0}
+footer{background:#102f49;color:#fff;padding:34px 0;margin-top:55px}.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}.foot a{color:#fff}
+.small{font-size:.82rem;color:#cbd9e3}
+@media(max-width:850px){
+ .links{display:none}.compare,.works,.turn{grid-template-columns:1fr}.arrow{transform:rotate(90deg);height:60px}
+ .details{grid-template-columns:1fr}.observe{grid-template-columns:1fr}.art-main{min-height:320px}
+}
+
+</style>
 </head><body>
 <header><nav class="wrap"><a class="brand" href="index.html">REGARDER L’ART</a><div class="links">
-<a href="artistes.html">Artistes</a><a href="parcours.html#aube">À l’aube de la Renaissance</a><a href="parcours.html">Parcours</a><a href="lieux.html">Lieux & musées</a><a href="hors-parcours.html">Hors parcours</a><a href="a-propos.html">À propos</a><a href="contact.html">Contact</a>
+<a href="artistes.html">Artistes</a><a href="parcours.html">Parcours</a><a href="lieux.html">Lieux & musées</a><a href="a-propos.html">À propos</a><a href="contact.html">Contact</a>
 </div></nav></header>
 <main>
 <section class="hero"><div class="wrap">
@@ -18,12 +79,12 @@
 </div></section>
 
 <section><div class="wrap">
-<div class="section-title"><div class="kicker">Regarder → comprendre</div><h2>De la tradition byzantine à Cimabue</h2></div>
+<div class="section-title"><div class="kicker">Regarder → comprendre</div><h2>Avant Cimabue, puis Cimabue</h2></div>
 <div class="compare">
 <article class="panel before">
 <div class="panel-head"><h2>Icône byzantine</h2><p>Une image sacrée qui rend présent le divin</p></div>
 <div class="panel-body">
-<div class="art-main"><img src="assets/images/icone-avant-cimabue.png" alt="Vierge à l’Enfant de tradition byzantine"></div>
+<div class="art-main"><img src="assets/images/icone-byzantine.jpg" alt="Vierge à l’Enfant de tradition byzantine"></div>
 <p class="caption">Vierge à l’Enfant — tradition byzantine. Image source conservée sans modification.</p>
 <div class="details">
 <div class="detail"><span class="crop icon-face"></span><p><strong>Visage</strong>Frontal, hiératique, très codifié. Le réalisme n’est pas le but : le regard paraît intemporel.</p></div>
@@ -54,7 +115,11 @@
 <div class="works">
 <article class="work"><div class="work-image"><img src="assets/images/cimabue-crucifix.png" alt="Cimabue, Crucifix de Santa Croce"></div>
 <div class="work-body"><h3><span class="number">2</span>Crucifix de Santa Croce</h3><p class="caption">Florence — l’œuvre source est affichée telle quelle.</p>
-<div class="observe"><div><b>Visage</b>La souffrance devient plus visible et expressive.</div><div><b>Corps</b>Le corps a un poids : il s’affaisse et son modelé se lit davantage.</div><div><b>Pose</b>Elle paraît moins abstraite et plus humaine.</div></div></div></article>
+<div class="observe"><div><b>Visage</b>La souffrance devient plus visible et expressive.</div><div><b>Corps</b>Le corps a un poids : il s’affaisse et son modelé se lit davantage.</div><div><b>Pose</b>Elle paraît moins abstraite et plus humaine.</div></div>
+<div class="history-box">
+<h4>🌊 L’histoire de l’œuvre — l’inondation de Florence</h4>
+<div class="history-grid"><img src="assets/images/cimabue-crucifix-inondation-1966.jpg" alt="Crucifix de Cimabue après les dégâts de l’inondation de Florence de 1966"><p>Le <b>4 novembre 1966</b>, l’Arno déborde et inonde Florence. Le Crucifix de Cimabue, conservé à Santa Croce, est gravement touché par l’eau et la boue. Une grande partie de la couche picturale est perdue. Les lacunes visibles aujourd’hui témoignent directement de cette catastrophe. L’œuvre, restaurée pendant plusieurs années, est devenue l’un des symboles du sauvetage du patrimoine florentin après l’inondation.</p></div>
+</div></div></article>
 
 <article class="work"><div class="work-image"><img src="assets/images/cimabue-flagellation.png" alt="La Flagellation du Christ, attribuée à Cimabue"></div>
 <div class="work-body"><h3><span class="number">3</span>La Flagellation du Christ</h3><p class="caption">Attribuée à Cimabue.</p>
@@ -65,7 +130,7 @@
 <section><div class="wrap">
 <div class="section-title"><div class="kicker">À retenir</div><h2>Le déplacement essentiel</h2></div>
 <div class="turn">
-<div class="turn-card before-card"><h3>Icône byzantine</h3><p>Image sacrée qui rend présent le divin</p><div class="thumb"><img src="assets/images/icone-avant-cimabue.png" alt=""></div>
+<div class="turn-card before-card"><h3>Icône byzantine</h3><p>Image sacrée qui rend présent le divin</p><div class="thumb"><img src="assets/images/icone-byzantine.jpg" alt=""></div>
 <ul><li>Fond d’or</li><li>Frontalité</li><li>Corps peu perceptible</li><li>Espace symbolique</li><li>Le réalisme n’est pas l’objectif</li><li>Fonction : rendre présent le sacré</li></ul></div>
 <div class="arrow">→</div>
 <div class="turn-card after-card"><h3>Cimabue</h3><p>L’image sacrée commence à prendre corps</p><div class="thumb"><img src="assets/images/cimabue-maesta.jpg" alt=""></div>
@@ -77,10 +142,17 @@
 <footer><div class="wrap foot"><div><b>REGARDER L’ART</b><br><span class="small">Comprendre ce que l’on voit.</span></div><div><a href="credits.html">Sources & crédits</a> · <a href="contact.html">Contact</a></div></div></footer>
 
 <style>
-/* The circles are CSS crops of the same original files: no generated substitute images. */
-.icon-face,.icon-gold,.icon-body,.icon-hand{background-image:url("assets/images/icone-avant-cimabue.png");background-size:340% auto}
-.icon-face{background-position:44% 19%}.icon-gold{background-position:78% 8%}.icon-body{background-position:48% 53%}.icon-hand{background-position:34% 66%}
-.maesta-face,.maesta-body,.maesta-throne,.maesta-angels{background-image:url("assets/images/cimabue-maesta.jpg");background-size:330% auto}
-.maesta-face{background-position:50% 19%}.maesta-body{background-position:52% 43%}.maesta-throne{background-position:26% 55%}.maesta-angels{background-position:82% 37%}
+/* Pastilles = recadrages CSS des fichiers originaux. Les œuvres principales ne sont jamais recadrées ni déformées. */
+.icon-face,.icon-gold,.icon-body,.icon-hand{background-image:url("assets/images/icone-byzantine.jpg");background-repeat:no-repeat}
+.icon-face{background-size:360% auto;background-position:43% 18%}
+.icon-gold{background-size:300% auto;background-position:86% 7%}
+.icon-body{background-size:285% auto;background-position:54% 49%}
+.icon-hand{background-size:360% auto;background-position:27% 66%}
+.maesta-face,.maesta-body,.maesta-throne,.maesta-angels{background-image:url("assets/images/cimabue-maesta.jpg");background-repeat:no-repeat}
+.maesta-face{background-size:330% auto;background-position:50% 19%}
+.maesta-body{background-size:300% auto;background-position:51% 43%}
+.maesta-throne{background-size:300% auto;background-position:27% 55%}
+.maesta-angels{background-size:300% auto;background-position:83% 37%}
+.history-box{margin-top:22px;padding:18px;border-radius:14px;background:#eef5f7;border-left:5px solid #274c5e}.history-box h4{margin:0 0 12px;font-family:Georgia,serif;color:#173b4d;font-size:1.15rem}.history-grid{display:grid;grid-template-columns:minmax(180px,260px) 1fr;gap:18px;align-items:start}.history-grid img{width:100%;height:auto;display:block;object-fit:contain;background:#fff}.history-grid p{margin:0;line-height:1.65}@media(max-width:700px){.history-grid{grid-template-columns:1fr}.history-grid img{max-width:300px;margin:auto}}
 </style>
 </body></html>
