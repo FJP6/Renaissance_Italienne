@@ -57,3 +57,5 @@ footer{background:#102f49;color:#fff;padding:34px 0;margin-top:55px}.foot{displa
  .links{display:none}.compare,.works,.turn{grid-template-columns:1fr}.arrow{transform:rotate(90deg);height:60px}
  .details{grid-template-columns:1fr}.observe{grid-template-columns:1fr}.art-main{min-height:320px}
 }
+
+.flood-note{margin-top:18px;background:#f5eee4;border-left:4px solid #b85c45;padding:16px 18px;border-radius:10px;line-height:1.55}
