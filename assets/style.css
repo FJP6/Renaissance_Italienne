@@ -25,3 +25,29 @@ footer{background:#173b66;color:#e9f1f6;padding:34px 0;margin-top:30px}.foot{dis
 
 /* Lieux & musées */
 .place-section{margin-top:38px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px}.place-heading,.city-top{display:flex;justify-content:space-between;align-items:end;gap:20px;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:20px}.place-heading h2,.city-top h2{margin:.1em 0 0}.place-heading p,.city-top p{margin:0;color:var(--muted);font-family:"Segoe UI",Arial,sans-serif}.place-count{display:inline-block;font:700 .76rem Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#617c94;background:var(--sky);padding:5px 9px;border-radius:999px}.location-works{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.location-works.one{grid-template-columns:minmax(260px,1fr) 2fr}.location-work{display:flex;gap:15px;align-items:center;text-decoration:none;color:var(--text);padding:10px;border-radius:14px;transition:.15s;background:#faf9f5}.location-work:hover{background:var(--sky)}.location-work img{width:105px;height:90px;object-fit:contain;background:#f2eee5;border-radius:9px}.location-work b{display:block;color:var(--ink);line-height:1.25}.location-work small{display:block;color:var(--muted);margin-top:5px}.coming-places{margin-top:24px;padding:20px 24px;border:1px dashed #aab9c5;border-radius:16px}.coming-places b{display:block;color:var(--ink);margin-top:4px}.city-card{margin-top:38px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px}.city-fiches{display:grid;grid-template-columns:1fr 1fr;gap:18px}.city-fiche{padding:22px;border-radius:16px;background:#faf9f5;border:1px solid #e7e2d8}.city-fiche strong{display:block;color:var(--ink);font-size:1.3rem;margin:7px 0}.city-fiche p{margin:0}.city-fiche .small{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:.72rem}@media(max-width:800px){.location-works,.location-works.one,.city-fiches{grid-template-columns:1fr}.place-heading,.city-top{align-items:flex-start;flex-direction:column}.location-work img{width:90px;height:80px}}
+
+/* Lieux & musées : Ville > Musée > Œuvres */
+.city-block{margin:0 0 38px}
+.city-heading{border-bottom:2px solid #243b5a;margin-bottom:18px;padding-bottom:8px}
+.city-heading h2{margin:0;color:#243b5a;font-size:1.8rem}
+.city-heading p{margin:4px 0 0;color:#666}
+.museum-block{margin:0 0 26px;padding:18px;background:#fff;border:1px solid #e5ded2;border-radius:12px}
+.museum-heading{display:flex;align-items:baseline;justify-content:space-between;gap:15px;margin-bottom:14px}
+.museum-heading h3{margin:0;color:#7b4035;font-size:1.2rem}
+.museum-heading a{font-size:.9rem}
+
+/* Fra Angelico — zoom renforcé uniquement pour le Jugement dernier.
+   La vignette dans la page conserve sa taille normale. */
+.artwork-modal.large-zoom .artwork-modal-box{
+  width:min(96vw, 1500px);
+  max-width:1500px;
+}
+.artwork-modal.large-zoom .artwork-modal-image{
+  max-height:92vh;
+}
+.artwork-modal.large-zoom .artwork-modal-image img{
+  max-height:90vh;
+  width:auto;
+  max-width:100%;
+  object-fit:contain;
+}
