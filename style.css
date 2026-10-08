@@ -36,22 +36,18 @@ footer{background:#173b66;color:#e9f1f6;padding:34px 0;margin-top:30px}.foot{dis
 .museum-heading h3{margin:0;color:#7b4035;font-size:1.2rem}
 .museum-heading a{font-size:.9rem}
 
-/* Grand zoom réservé au Jugement dernier de Fra Angelico */
-.artwork-modal.judgment-large{padding:8px}
-.artwork-modal.judgment-large .artwork-modal-dialog{
-  width:99vw;
-  max-width:1900px;
-  max-height:98vh;
-  grid-template-columns:minmax(0,4fr) minmax(220px,.75fr);
+/* Fra Angelico — zoom renforcé uniquement pour le Jugement dernier.
+   La vignette dans la page conserve sa taille normale. */
+.artwork-modal.large-zoom .artwork-modal-box{
+  width:min(96vw, 1500px);
+  max-width:1500px;
 }
-.artwork-modal.judgment-large .artwork-modal-dialog>img{
-  width:100%;
-  height:auto;
-  max-height:96vh;
+.artwork-modal.large-zoom .artwork-modal-image{
+  max-height:92vh;
+}
+.artwork-modal.large-zoom .artwork-modal-image img{
+  max-height:90vh;
+  width:auto;
+  max-width:100%;
   object-fit:contain;
-}
-.artwork-modal.judgment-large .artwork-modal-info{padding:24px 22px}
-@media(max-width:800px){
-  .artwork-modal.judgment-large .artwork-modal-dialog{grid-template-columns:1fr}
-  .artwork-modal.judgment-large .artwork-modal-dialog>img{max-height:78vh}
 }
