@@ -1,13 +1,5 @@
-PACK GITHUB CIMABUE COMPLET
+MISE À JOUR REGARDER L’ART
 
-À envoyer dans le dépôt en conservant exactement les dossiers :
-cimabue.html
-artistes.html
-assets/cimabue.css
-assets/images/icone-avant-cimabue.png
-assets/images/cimabue-maesta.jpg
-assets/images/cimabue-crucifix.png
-assets/images/cimabue-flagellation.png
-
-Les 4 fichiers dans assets/images sont les images sources originales utilisées par la page.
-Ce pack ne contient pas fra-angelico.html ni contact.html.
+À la racine GitHub : remplacer index.html et parcours.html ; ajouter ressources.html.
+Dans assets/images : ajouter les fichiers parcours-image-*.jpg.
+Ne pas supprimer les autres fichiers du site.
