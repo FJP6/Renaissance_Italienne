@@ -1,0 +1,1 @@
+Déposer lieux.html à la racine de GitHub et les 5 fichiers JPG dans assets/images/. Ne pas supprimer les autres images.
