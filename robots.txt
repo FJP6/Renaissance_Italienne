@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fjp6.github.io/regarder-art/sitemap.xml
