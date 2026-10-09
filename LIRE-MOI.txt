@@ -1,5 +1,3 @@
-MISE À JOUR REGARDER L’ART
-
-À la racine GitHub : remplacer index.html et parcours.html ; ajouter ressources.html.
-Dans assets/images : ajouter les fichiers parcours-image-*.jpg.
-Ne pas supprimer les autres fichiers du site.
+Mise à jour Regarder l’Art : ressources.html et parcours.html.
+Décompresser puis importer ces deux fichiers à la racine du dépôt GitHub.
+Aucun autre fichier à remplacer. Les liens externes pointent vers Radio France et ARTE.
