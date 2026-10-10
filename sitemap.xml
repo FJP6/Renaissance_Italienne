@@ -1,49 +1,54 @@
 <?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fjp6.github.io/regarder-art/</loc>
+    <loc>https://regarder-art.fr/</loc>
   </url>
   <url>
-    <loc>https://fjp6.github.io/regarder-art/artistes.html</loc>
+    <loc>https://regarder-art.fr/artistes.html</loc>
   </url>
   <url>
-    <loc>https://fjp6.github.io/regarder-art/parcours.html</loc>
+    <loc>https://regarder-art.fr/parcours.html</loc>
   </url>
   <url>
-    <loc>https://fjp6.github.io/regarder-art/parcours-peinture.html</loc>
+    <loc>https://regarder-art.fr/parcours-peinture.html</loc>
   </url>
   <url>
-    <loc>https://fjp6.github.io/regarder-art/parcours-sculpture.html</loc>
+    <loc>https://regarder-art.fr/parcours-sculpture.html</loc>
   </url>
   <url>
-    <loc>https://fjp6.github.io/regarder-art/parcours-architecture.html</loc>
+    <loc>https://regarder-art.fr/parcours-architecture.html</loc>
   </url>
   <url>
-    <loc>https://fjp6.github.io/regarder-art/lieux.html</loc>
+    <loc>https://regarder-art.fr/lieux.html</loc>
   </url>
   <url>
-    <loc>https://fjp6.github.io/regarder-art/ressources.html</loc>
+    <loc>https://regarder-art.fr/ressources.html</loc>
   </url>
   <url>
-    <loc>https://fjp6.github.io/regarder-art/cimabue.html</loc>
+    <loc>https://regarder-art.fr/cimabue.html</loc>
   </url>
   <url>
-    <loc>https://fjp6.github.io/regarder-art/fra-angelico.html</loc>
+    <loc>https://regarder-art.fr/fra-angelico.html</loc>
   </url>
   <url>
-    <loc>https://fjp6.github.io/regarder-art/brunelleschi.html</loc>
+    <loc>https://regarder-art.fr/brunelleschi.html</loc>
   </url>
   <url>
-    <loc>https://fjp6.github.io/regarder-art/masaccio.html</loc>
+    <loc>https://regarder-art.fr/masaccio.html</loc>
   </url>
   <url>
-    <loc>https://fjp6.github.io/regarder-art/a-propos.html</loc>
+    <loc>https://regarder-art.fr/a-propos.html</loc>
   </url>
   <url>
-    <loc>https://fjp6.github.io/regarder-art/credits.html</loc>
+    <loc>https://regarder-art.fr/credits.html</loc>
   </url>
   <url>
-    <loc>https://fjp6.github.io/regarder-art/contact.html</loc>
+    <loc>https://regarder-art.fr/contact.html</loc>
   </url>
-<url><loc>https://fjp6.github.io/regarder-art/giotto.html</loc></url>
+  <url>
+    <loc>https://regarder-art.fr/giotto.html</loc>
+  </url>
+  <url>
+    <loc>https://regarder-art.fr/donatello.html</loc>
+  </url>
 </urlset>
